@@ -205,7 +205,7 @@ function ToolCard({ tool }: { tool: Tool }) {
       </p>
       {tool.upstream ? (
         <p className="mt-6 text-[11px] uppercase tracking-widest text-subtle">
-          Upstream · {tool.upstream}
+          {tool.upstream}
         </p>
       ) : null}
       <div

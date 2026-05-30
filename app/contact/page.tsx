@@ -49,13 +49,13 @@ function Channels() {
     {
       tag: "Email",
       label: "ftcwires@gmail.com",
-      desc: "The fastest way to reach us.",
+      desc: "For questions about FTC W.I.R.E.S. and its resources.",
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=ftcwires@gmail.com"
     },
     {
       tag: "Lead Team Email",
       label: "teamhazmat13201@gmail.com",
-      desc: "The fastest way to reach the core team.",
+      desc: "Reach Team Hazmat directly.", 
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=teamhazmat13201@gmail.com",
     },
     {

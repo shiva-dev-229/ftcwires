@@ -19,8 +19,6 @@ export default function PartsLendingPage() {
     <>
       <Hero />
       <Vision />
-      <Roadmap />
-      <Principles />
       <FinalCTA />
     </>
   );
@@ -67,9 +65,9 @@ function Hero() {
         </h1>
 
         <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-          Imagine never losing a build night to a backordered motor. The Parts
-          Lending Network is an ambitious upcoming initiative — a community-run
-          hardware pool that ships between teams, on trust, across the state.
+          A very common scenario is that a part you need to finish your robot is sold out.
+          Sometimes the part you need is sitting in another team's workshop.
+           The Parts Lending Network aims to connect Wisconsin teams so hardware can be shared when it's needed most.
         </p>
 
         <div className="mx-auto mt-12 max-w-xl text-left">
@@ -99,12 +97,12 @@ function Vision() {
     {
       tag: "Lend",
       title: "List what you can spare",
-      desc: "Got a drawer of last-season parts? List them in the catalog. Help a rookie team unblock their build without buying anything new.",
+      desc: "Got a drawer of last-season parts? List them in the catalog. Help a teams across the state get a part fast without waiting for there order to ship.",
     },
     {
       tag: "Trust",
       title: "Powered by the community",
-      desc: "Reputation, light tracking, and inter-team agreements — built on the same trust that already makes Wisconsin FTC work.",
+      desc: "The goal is to have the parts replaced when new stock becomes available, though teams may also choose to donate items permanently.",
     },
   ];
 
@@ -115,11 +113,11 @@ function Vision() {
           eyebrow="The Vision"
           title={
             <>
-              Hardware that flows
-              <span className="block text-fade">where it&rsquo;s needed.</span>
+            Making hardware easier to access.
+              <span className="block text-fade">Connecting teams that need parts with teams that have the spare parts.</span>
             </>
           }
-          desc="A statewide circulatory system for FTC parts. Less waste, faster iteration, stronger rookie teams."
+          desc="A statewide system for FTC parts. Less waste, faster iteration, and better competition."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-3">

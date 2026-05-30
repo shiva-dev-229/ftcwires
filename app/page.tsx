@@ -35,7 +35,7 @@ export default function Home() {
               <ArrowRight className="h-4 w-4" />
             </PrimaryButton>
             <GhostButton
-              href="/parts-lending-network"
+              href="s-lending-ne/parttwork"
               className="w-full sm:w-auto"
             >
               See what we&rsquo;re building

@@ -8,18 +8,32 @@ export default function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    // No backend yet — capture intent locally so the UX feels real.
-    try {
-      const key = "ftcw-waitlist";
-      const list = JSON.parse(localStorage.getItem(key) || "[]");
-      list.push({ team, email, at: new Date().toISOString() });
-      localStorage.setItem(key, JSON.stringify(list));
-    } catch {}
+  async function onSubmit(e: React.FormEvent) {
+  e.preventDefault();
+
+  if (!email) return;
+
+  try {
+    await fetch(
+      "https://docs.google.com/forms/d/e/1FAIpQLSc5kbrU3p_z2ook_jF-oD3T51uoKzib1E1_FqJYhMxFeDOp4g/formResponse",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams({
+          "entry.1098718976": team,
+          "entry.316249258": email,
+        }).toString(),
+      }
+    );
+
     setSubmitted(true);
+  } catch (err) {
+    console.error(err);
   }
+}
 
   if (submitted) {
     return (
@@ -89,13 +103,12 @@ export default function WaitlistForm() {
               "0 1px 0 rgba(255,255,255,0.08) inset, 0 12px 28px -10px rgba(0,0,0,0.5)",
           }}
         >
-          Get early access
+          Stay updated
           <ArrowRight className="h-3.5 w-3.5" />
         </button>
       </div>
       <p className="px-2 pb-1 pt-2 text-[11px] text-subtle">
-        We&rsquo;ll only email about Parts Lending Network launch updates. No
-        spam.
+        We&rsquo;ll email about any updates!
       </p>
     </form>
   );
