@@ -113,11 +113,10 @@ function Vision() {
           eyebrow="The Vision"
           title={
             <>
-            Making hardware easier to access.
-              <span className="block text-fade">Connecting teams that need parts with teams that have the spare parts.</span>
+              <span className="block text-fade">Connecting teams that need parts with teams that have the parts.</span>
             </>
           }
-          desc="A statewide system for FTC parts. Less waste, faster iteration, and better competition."
+          desc="A statewide system for FTC parts. Less waste, faster iteration, and better competition. Here's how we see it working."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-3">
