@@ -81,8 +81,8 @@ const AUTO_PATHING_TOOLS: Tool[] = [
     name: "Pedro Pathing",
     blurb:
       "A custom path-following library for FTC. Uses Bézier curves to keep autos fast and consistent while correcting for external disturbances along the way.",
-    href: "#tools",
-    status: "soon",
+    href: "/pedro-pathing",
+    status: "available",
     upstream: "Pedro-Pathing/PedroPathing",
   },
 ];
@@ -222,8 +222,7 @@ function ToolCard({ tool }: { tool: Tool }) {
 /* =====================================================
  * Sign up — register to access materials (gated)
  * ===================================================== */
-const SIGNUP_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdyDzmv6d0eZwyLC0Qg_ix_XZDBTBqdmHrPxi7nkFHH7l6xrA/viewform";
+
 
 function SignUp() {
   return (
@@ -264,16 +263,12 @@ function SignUp() {
             </p>
 
             <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-              <PrimaryButton
-                href={SIGNUP_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <PrimaryButton href="/register">
                 Register your team
                 <ArrowRight className="h-4 w-4" />
               </PrimaryButton>
               <span className="text-[12.5px] text-subtle">
-                ~30 seconds · opens a Google Form in a new tab
+                ~30 seconds
               </span>
             </div>
           </div>

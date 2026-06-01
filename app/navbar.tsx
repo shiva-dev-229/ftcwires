@@ -261,7 +261,7 @@ export default function Navbar() {
           </button>
 
           <Link
-            href="/contact"
+            href="/register"
             className="hidden items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-medium transition-all sm:inline-flex"
             style={{
               background: "var(--foreground)",
