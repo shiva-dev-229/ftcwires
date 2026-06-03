@@ -143,25 +143,26 @@ function WhatItIs() {
                 <span className="h-2.5 w-2.5 rounded-full" style={{ background: "#333" }} />
                 <span className="ml-3 text-[11px]" style={{ color: "#444" }}>CycleAuto.java</span>
               </div>
-              <pre className="overflow-x-auto px-5 py-5 text-[12.5px] leading-7 text-white">
-                <code>{`path = follower.pathBuilder()
-  .addPath(
-    new BezierLine(scorePose, pickupPose)
-  )
-  .setLinearHeadingInterpolation(
-    scorePose.getHeading(),
-    pickupPose.getHeading()
-  )
-  .addPath(
-    new BezierLine(pickupPose, scorePose)
-  )
-  .setLinearHeadingInterpolation(
-    pickupPose.getHeading(),
-    scorePose.getHeading()
-  )
-  .build();
-
-follower.followPath(path);`}</code>
+              <pre className="overflow-x-auto px-5 py-5 text-[12.5px] leading-7" style={{ color: "#E6EDF3" }}>
+                <code>
+                  {"path "}<span style={{ color: "#E6EDF3" }}>=</span>{" follower."}<span style={{ color: "#D2A8FF" }}>pathBuilder</span><span style={{ color: "#E6EDF3" }}>()</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>addPath</span><span style={{ color: "#E6EDF3" }}>(</span>{"\n"}
+                  {"    "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>BezierLine</span><span style={{ color: "#E6EDF3" }}>(</span>{"scorePose"}<span style={{ color: "#E6EDF3" }}>, </span>{"pickupPose"}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>setLinearHeadingInterpolation</span><span style={{ color: "#E6EDF3" }}>(</span>{"\n"}
+                  {"    "}{"scorePose"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>getHeading</span><span style={{ color: "#E6EDF3" }}>(),</span>{"\n"}
+                  {"    "}{"pickupPose"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>getHeading</span><span style={{ color: "#E6EDF3" }}>()</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>addPath</span><span style={{ color: "#E6EDF3" }}>(</span>{"\n"}
+                  {"    "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>BezierLine</span><span style={{ color: "#E6EDF3" }}>(</span>{"pickupPose"}<span style={{ color: "#E6EDF3" }}>, </span>{"scorePose"}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>setLinearHeadingInterpolation</span><span style={{ color: "#E6EDF3" }}>(</span>{"\n"}
+                  {"    "}{"pickupPose"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>getHeading</span><span style={{ color: "#E6EDF3" }}>(),</span>{"\n"}
+                  {"    "}{"scorePose"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>getHeading</span><span style={{ color: "#E6EDF3" }}>()</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+                  {"  "}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>build</span><span style={{ color: "#E6EDF3" }}>();</span>{"\n\n"}
+                  {"follower"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>followPath</span><span style={{ color: "#E6EDF3" }}>(</span>{"path"}<span style={{ color: "#E6EDF3" }}>);</span>
+                </code>
               </pre>
             </div>
           </div>

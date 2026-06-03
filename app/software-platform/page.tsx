@@ -73,8 +73,8 @@ const AUTO_PATHING_TOOLS: Tool[] = [
     name: "Roadrunner",
     blurb:
       "A motion-planning library built for FTC. Enables complex path generation and following with precise control over velocity and acceleration — for more accurate autonomous routines.",
-    href: "#tools",
-    status: "soon",
+    href: "/roadrunner",
+    status: "available",
     upstream: "acmerobotics/road-runner",
   },
   {

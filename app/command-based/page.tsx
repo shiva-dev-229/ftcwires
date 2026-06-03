@@ -153,27 +153,30 @@ function WhatItIs() {
                   AutoScorePreload.java
                 </span>
               </div>
-              <pre className="overflow-x-auto px-5 py-5 text-foreground">
+              <pre className="overflow-x-auto px-5 py-5" style={{ color: "#E6EDF3" }}>
                 <code>
-                  <span className="text-subtle">// commands reads almost like english</span>
+                  <span style={{ color: "#8B949E" }}>// commands read almost like english</span>
                   {"\n"}
-                  schedule(
+                  <span style={{ color: "#D2A8FF" }}>schedule</span>
+                  <span style={{ color: "#E6EDF3" }}>(</span>
                   {"\n"}
-                  {"  "}new SequentialCommandGroup(
+                  {"  "}<span style={{ color: "#FF7B72" }}>new </span>
+                  <span style={{ color: "#E6EDF3" }}>SequentialCommandGroup</span>
+                  <span style={{ color: "#E6EDF3" }}>(</span>
                   {"\n"}
-                  {"    "}drive.followPath(Paths.<span className="text-fade">INTAKE</span>),
+                  {"    "}drive.<span style={{ color: "#D2A8FF" }}>followPath</span><span style={{ color: "#E6EDF3" }}>(</span>Paths.<span style={{ color: "#E6EDF3" }}>INTAKE</span><span style={{ color: "#E6EDF3" }}>),</span>
                   {"\n"}
-                  {"    "}intake.start(),
+                  {"    "}intake.<span style={{ color: "#D2A8FF" }}>start</span><span style={{ color: "#E6EDF3" }}>(),</span>
                   {"\n"}
-                  {"    "}drive.followPath(Paths.<span className="text-fade">LAUNCH</span>),
+                  {"    "}drive.<span style={{ color: "#D2A8FF" }}>followPath</span><span style={{ color: "#E6EDF3" }}>(</span>Paths.<span style={{ color: "#E6EDF3" }}>LAUNCH</span><span style={{ color: "#E6EDF3" }}>),</span>
                   {"\n"}
-                  {"    "}launcher.launch(),
+                  {"    "}launcher.<span style={{ color: "#D2A8FF" }}>launch</span><span style={{ color: "#E6EDF3" }}>(),</span>
                   {"\n"}
-                  {"    "}drive.park(Paths.<span className="text-fade">PARK</span>)
+                  {"    "}drive.<span style={{ color: "#D2A8FF" }}>park</span><span style={{ color: "#E6EDF3" }}>(</span>Paths.<span style={{ color: "#E6EDF3" }}>PARK</span><span style={{ color: "#E6EDF3" }}>)</span>
                   {"\n"}
-                  {"  "})
+                  {"  "}<span style={{ color: "#E6EDF3" }}>)</span>
                   {"\n"}
-                  );
+                  <span style={{ color: "#E6EDF3" }}>);</span>
                 </code>
               </pre>
             </div>
@@ -450,81 +453,77 @@ function Skeletons() {
           <CodeBlock
             file="Intake.java"
             label="Subsystem"
-            code={`public class Intake {
-
-    //This is an example using Ivy made by Pedro Pathing
-    private final DcMotorEx intakeMotor;
-
-    public Intake(HardwareMap hardwareMap) {
-        intakeMotor = hardwareMap.get(DcMotorEx.class, "intakeMotor");
-    }
-
-    public Command intakeForward() {
-        return new InstantCommand(() ->
-                intakeMotor.setPower(1.0)
-        );
-    }
-
-    public Command intakeReverse() {
-        return new InstantCommand(() ->
-                intakeMotor.setPower(-1.0)
-        );
-    }
-
-    public Command intakeOff() {
-        return new InstantCommand(() ->
-                intakeMotor.setPower(0.0)
-        );
-    }
-}`}
+            code={<>
+              <span style={{ color: "#FF7B72" }}>public class </span><span style={{ color: "#E6EDF3" }}>Intake </span><span style={{ color: "#E6EDF3" }}>{"{"}</span>{"\n\n"}
+              {"    "}<span style={{ color: "#8B949E" }}>// This is an example using Ivy made by Pedro Pathing</span>{"\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>private final </span><span style={{ color: "#E6EDF3" }}>DcMotorEx </span>{"intakeMotor"}<span style={{ color: "#E6EDF3" }}>;</span>{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Intake</span><span style={{ color: "#E6EDF3" }}>(</span><span style={{ color: "#E6EDF3" }}>HardwareMap </span>{"hardwareMap"}<span style={{ color: "#E6EDF3" }}>) {"{"}</span>{"\n"}
+              {"        "}{"intakeMotor"}<span style={{ color: "#E6EDF3" }}> = </span>{"hardwareMap"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>get</span><span style={{ color: "#E6EDF3" }}>(</span><span style={{ color: "#E6EDF3" }}>DcMotorEx</span><span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#FF7B72" }}>class</span><span style={{ color: "#E6EDF3" }}>, </span><span style={{ color: "#FFA657" }}>"intakeMotor"</span><span style={{ color: "#E6EDF3" }}>);</span>{"\n"}
+              {"    "}<span style={{ color: "#E6EDF3" }}>{"}"}</span>{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>intakeForward</span><span style={{ color: "#E6EDF3" }}>() {"{"}</span>{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span><span style={{ color: "#E6EDF3" }}>(</span>{"() ->"}{"\n"}
+              {"                "}{"intakeMotor"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>setPower</span><span style={{ color: "#E6EDF3" }}>(</span><span style={{ color: "#79C0FF" }}>1.0</span><span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+              {"        "}<span style={{ color: "#E6EDF3" }}>);</span>{"\n"}
+              {"    "}<span style={{ color: "#E6EDF3" }}>{"}"}</span>{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>intakeReverse</span><span style={{ color: "#E6EDF3" }}>() {"{"}</span>{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span><span style={{ color: "#E6EDF3" }}>(</span>{"() ->"}{"\n"}
+              {"                "}{"intakeMotor"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>setPower</span><span style={{ color: "#E6EDF3" }}>(-</span><span style={{ color: "#79C0FF" }}>1.0</span><span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+              {"        "}<span style={{ color: "#E6EDF3" }}>);</span>{"\n"}
+              {"    "}<span style={{ color: "#E6EDF3" }}>{"}"}</span>{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>intakeOff</span><span style={{ color: "#E6EDF3" }}>() {"{"}</span>{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span><span style={{ color: "#E6EDF3" }}>(</span>{"() ->"}{"\n"}
+              {"                "}{"intakeMotor"}<span style={{ color: "#E6EDF3" }}>.</span><span style={{ color: "#D2A8FF" }}>setPower</span><span style={{ color: "#E6EDF3" }}>(</span><span style={{ color: "#79C0FF" }}>0.0</span><span style={{ color: "#E6EDF3" }}>)</span>{"\n"}
+              {"        "}<span style={{ color: "#E6EDF3" }}>);</span>{"\n"}
+              {"    "}<span style={{ color: "#E6EDF3" }}>{"}"}</span>{"\n"}
+              <span style={{ color: "#E6EDF3" }}>{"}"}</span>
+            </>}
           />
           <CodeBlock
             file="AutoCommands.java"
             label="Command"
-            code={`public class AutoCommands {
-
-    /// This is an example made with NextFTC 1.0
-    public Command intake(PathChain path) {
-        return new ParallelDeadlineGroup(
-                new FollowPath(path, true),
-                new InstantCommand(IntakeRoller::setFor),
-                new WaitUntil(() ->
-                        PedroComponent.follower().getCurrentTValue() >= 0.30
-                ).then(
-                        new InstantCommand(
-                                Launcher.INSTANCE::setLauncherStateIdle
-                        )
-                )
-        );
-    }
-
-    public Command launch(PathChain path, double triggerPoint) {
-        return new ParallelDeadlineGroup(
-                new FollowPath(path, true),
-                new InstantCommand(() ->
-                        Turret.INSTANCE.turretAuto(path.endPose())
-                ),
-                new WaitUntil(() ->
-                        PedroComponent.follower().getCurrentTValue() >= triggerPoint
-                ).then(
-                        LauncherGroup.INSTANCE.closeLaunchForAuto
-                )
-        );
-    }
-
-    public Command intakeUntilFull(double timeout) {
-        return new ParallelRaceGroup(
-                new Delay(timeout),
-                new SequentialGroup(
-                        new InstantCommand(IntakeRoller::setFor),
-                        new WaitUntil(
-                                SpindexerSensors.INSTANCE::isSpindexerFull
-                        ),
-                        new InstantCommand(IntakeRoller::setOff)
-                )
-        );
-    }
-}`}
+            code={<>
+              <span style={{ color: "#FF7B72" }}>public class </span><span style={{ color: "#E6EDF3" }}>AutoCommands </span>{"{"}{"\n\n"}
+              {"    "}<span style={{ color: "#8B949E" }}>{"/// This is an example made with NextFTC 1.0"}</span>{"\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>intake</span>{"("}<span style={{ color: "#E6EDF3" }}>PathChain </span>{"path) {"}{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>ParallelDeadlineGroup</span>{"("}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>FollowPath</span>{"(path, "}<span style={{ color: "#FF7B72" }}>true</span>{"),"}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span>{"("}<span style={{ color: "#E6EDF3" }}>IntakeRoller</span>{"::"}<span style={{ color: "#D2A8FF" }}>setFor</span>{"),"}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>WaitUntil</span>{"(() ->"}{"\n"}
+              {"                        "}<span style={{ color: "#E6EDF3" }}>PedroComponent</span>{"."}<span style={{ color: "#D2A8FF" }}>follower</span>{"()."}<span style={{ color: "#D2A8FF" }}>getCurrentTValue</span>{"() >= "}<span style={{ color: "#79C0FF" }}>0.30</span>{"\n"}
+              {"                )."}<span style={{ color: "#D2A8FF" }}>then</span>{"("}{"\n"}
+              {"                        "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span>{"("}{"\n"}
+              {"                                "}<span style={{ color: "#E6EDF3" }}>Launcher</span>{"."}<span style={{ color: "#E6EDF3" }}>INSTANCE</span>{"::"}<span style={{ color: "#D2A8FF" }}>setLauncherStateIdle</span>{"\n"}
+              {"                        )"}{"\n"}
+              {"                )"}{"\n"}
+              {"        "}{")"}<span style={{ color: "#E6EDF3" }}>{";"}</span>{"\n"}
+              {"    }"}{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>launch</span>{"("}<span style={{ color: "#E6EDF3" }}>PathChain </span>{"path, "}<span style={{ color: "#FF7B72" }}>double </span>{"triggerPoint) {"}{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>ParallelDeadlineGroup</span>{"("}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>FollowPath</span>{"(path, "}<span style={{ color: "#FF7B72" }}>true</span>{"),"}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span>{"(() ->"}{"\n"}
+              {"                        "}<span style={{ color: "#E6EDF3" }}>Turret</span>{"."}<span style={{ color: "#E6EDF3" }}>INSTANCE</span>{"."}<span style={{ color: "#D2A8FF" }}>turretAuto</span>{"(path."}<span style={{ color: "#D2A8FF" }}>endPose</span>{"())"}{"\n"}
+              {"                ),"}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>WaitUntil</span>{"(() ->"}{"\n"}
+              {"                        "}<span style={{ color: "#E6EDF3" }}>PedroComponent</span>{"."}<span style={{ color: "#D2A8FF" }}>follower</span>{"()."}<span style={{ color: "#D2A8FF" }}>getCurrentTValue</span>{"() >= triggerPoint"}{"\n"}
+              {"                )."}<span style={{ color: "#D2A8FF" }}>then</span>{"("}{"\n"}
+              {"                        "}<span style={{ color: "#E6EDF3" }}>LauncherGroup</span>{"."}<span style={{ color: "#E6EDF3" }}>INSTANCE</span>{".closeLaunchForAuto"}{"\n"}
+              {"                )"}{"\n"}
+              {"        "}{")"}<span style={{ color: "#E6EDF3" }}>{";"}</span>{"\n"}
+              {"    }"}{"\n\n"}
+              {"    "}<span style={{ color: "#FF7B72" }}>public </span><span style={{ color: "#E6EDF3" }}>Command </span><span style={{ color: "#D2A8FF" }}>intakeUntilFull</span>{"("}<span style={{ color: "#FF7B72" }}>double </span>{"timeout) {"}{"\n"}
+              {"        "}<span style={{ color: "#FF7B72" }}>return new </span><span style={{ color: "#E6EDF3" }}>ParallelRaceGroup</span>{"("}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>Delay</span>{"(timeout),"}{"\n"}
+              {"                "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>SequentialGroup</span>{"("}{"\n"}
+              {"                        "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span>{"("}<span style={{ color: "#E6EDF3" }}>IntakeRoller</span>{"::"}<span style={{ color: "#D2A8FF" }}>setFor</span>{"),"}{"\n"}
+              {"                        "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>WaitUntil</span>{"("}{"\n"}
+              {"                                "}<span style={{ color: "#E6EDF3" }}>SpindexerSensors</span>{"."}<span style={{ color: "#E6EDF3" }}>INSTANCE</span>{"::"}<span style={{ color: "#D2A8FF" }}>isSpindexerFull</span>{"\n"}
+              {"                        ),"}{"\n"}
+              {"                        "}<span style={{ color: "#FF7B72" }}>new </span><span style={{ color: "#E6EDF3" }}>InstantCommand</span>{"("}<span style={{ color: "#E6EDF3" }}>IntakeRoller</span>{"::"}<span style={{ color: "#D2A8FF" }}>setOff</span>{")"}{"\n"}
+              {"                )"}{"\n"}
+              {"        "}{")"}<span style={{ color: "#E6EDF3" }}>{";"}</span>{"\n"}
+              {"    }"}{"\n"}
+              {"}"}
+            </>}
           />
         </div>
 
@@ -545,7 +544,7 @@ function CodeBlock({
 }: {
   file: string;
   label: string;
-  code: string;
+  code: React.ReactNode;
 }) {
   return (
     <div
@@ -583,7 +582,7 @@ function CodeBlock({
           {label}
         </span>
       </div>
-      <pre className="overflow-x-auto px-5 py-5 text-foreground">
+      <pre className="overflow-x-auto px-5 py-5" style={{ color: "#E6EDF3" }}>
         <code>{code}</code>
       </pre>
     </div>
