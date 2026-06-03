@@ -53,7 +53,7 @@ export default function Footer() {
               <WiresLogo size={28} />
             </Link>
             <p className="mt-4 max-w-xs text-[13.5px] leading-relaxed text-muted">
-              Wisconsin Initiative Rising to Enable STEM. An open community
+              Wisconsin Rises to Enable STEM Growth. An open community
               project led by Team 13201 Hazmat, with contributions from
               teams, mentors, and alumni across Wisconsin FTC.
             </p>

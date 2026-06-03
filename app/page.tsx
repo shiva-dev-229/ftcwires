@@ -143,32 +143,22 @@ function Mission() {
             className="bg-grid pointer-events-none absolute inset-0 opacity-50"
           />
           <div className="relative">
-            <span
-              className="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-widest text-muted"
-              style={{ borderColor: "var(--border)" }}
-            >
-              Why we created WIRES
-            </span>
 
-            {/* The hook — the moment everything started */}
+            {}
             <p className="mt-6 text-3xl font-medium leading-[1.2] tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              <span className="text-fade">At our first World Championship,</span>{" "}
-              we were partnered with a team from{" "}
-              <span className="text-foreground">Nigeria</span>{" "}
-              <span className="text-fade">that didn&rsquo;t have an auto.</span>
+              <span className="text-fade">Why we created WIRES</span>{" "}
             </p>
 
-            {/* The body — what happened next, and why this site exists */}
+            {}
             <div className="mt-8 max-w-2xl space-y-4 text-base leading-relaxed text-muted sm:text-lg">
               <p>
-                We spent our our downtime helping them write one to both help them in the compeiton and us.
-              </p>
+                  At our first World Championship, we were partnered with a team from Nigeria that didn’t have an autonomous program. Because they had no idea where to start and how to program one.             </p>
               <p>
-                We came home and thought how many other teams were hitting the
-                same wall without anyone to help them through it.{" "}
-                <span className="text-foreground">
-                  This is why we created WIRES!
-                </span>
+                During our downtime, we helped them build one, not just to improve their performance, but to help our entire alliance compete at a higher level.
+
+                When we came home, we realized they probably weren’t the only team facing that problem.
+                 Many teams hit the same wall without having someone there to guide them through it.{" "} We contiue to help team
+                 across our competions by helping load WIRES whenever possible!
               </p>
             </div>
 
