@@ -196,13 +196,13 @@ function HomeCTA() {
         <SectionHeader
           title={
             <>
-              Made by teams.
+              Made for every team in
               <span className="block text-fade">
-                For every team in Wisconsin and the Globe.
+               Wisconsin and the Globe.
               </span>
             </>
           }
-          desc="FTC Wires is an open community project led by Team 13201 Hazmat with contributions from teams, mentors, and alumni across the state. Use what&rsquo;s here, share what&rsquo;s worked for your team, or just say hi — every team makes the hub better."
+          desc="FTC Wires is an open community project led by Team 13201 Hazmat with contributions from teams, mentors, and alumni across the state."
         />
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <PrimaryButton href="/contact">

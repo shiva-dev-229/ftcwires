@@ -43,24 +43,8 @@ function Hero() {
       </div>
 
       <div className="animate-in mx-auto max-w-4xl text-center">
-        <span
-          className="inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium backdrop-blur-sm"
-          style={{
-            borderColor: "var(--border)",
-            background:
-              "color-mix(in oklab, var(--foreground) 3%, transparent)",
-            color: "var(--muted)",
-          }}
-        >
-          <span
-            className="pulse-dot inline-block h-1.5 w-1.5 rounded-full"
-            style={{ background: "#f59e0b" }}
-          />
-          Coming Soon · Early access opening soon
-        </span>
-
         <h1 className="mt-7 text-5xl font-semibold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
-          A lending network
+          A shared parts network
           <span className="block text-fade">for Wisconsin FTC.</span>
         </h1>
 

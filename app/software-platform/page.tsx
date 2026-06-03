@@ -118,13 +118,13 @@ function Tools() {
 
         <ToolGroup
           label="Auto Pathing"
-          desc="Sample autonomous routines and path-following — from drag-and-drop Blocks to advanced motion planning."
+          desc=""
           tools={AUTO_PATHING_TOOLS}
         />
 
         <ToolGroup
           label="General Guides"
-          desc="Programming environments, the official SDK, and code architecture."
+          desc=" "
           tools={GENERAL_TOOLS}
         />
       </div>
