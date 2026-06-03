@@ -19,7 +19,6 @@ export default function SoftwarePlatformPage() {
   return (
     <>
       <PageHero
-        eyebrow="Software · Examples & Guides"
         title={
           <>
             Software resources
@@ -250,7 +249,6 @@ function SignUp() {
             }}
           />
           <div className="relative">
-            <SectionEyebrow>Register</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Fill this form 
               <span className="block text-fade">to access our auto guides.</span>

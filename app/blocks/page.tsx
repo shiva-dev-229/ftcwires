@@ -18,7 +18,6 @@ export default function BlocksPage() {
   return (
     <>
       <PageHero
-        eyebrow="Tool · Programming"
         title={
           <>
             <span className="block text-fade">Blocks</span>
@@ -67,7 +66,6 @@ function VideoSection() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-5xl">
         <SectionHeader
-          eyebrow="Watch"
           title={
             <>
               Blocks
@@ -166,7 +164,6 @@ function WhyTeams() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Why teams use it"
           title={
             <>
               Why Blocks
@@ -239,7 +236,6 @@ function SignUp() {
           />
 
           <div className="relative">
-            <SectionEyebrow>Team info</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Fill this form
               <span className="block text-fade">before using the auto guides.</span>
@@ -293,7 +289,6 @@ function OfficialResources() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Official resources"
           title={
             <>
               Check out

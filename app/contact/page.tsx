@@ -16,7 +16,6 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow=""
         title={
           <>
             Contact us
@@ -130,7 +129,6 @@ function FAQ() {
     <section className="px-6 pb-32">
       <div className="mx-auto max-w-3xl">
         <SectionHeader
-          eyebrow="FAQ"
           title={<>Common questions.</>}
         />
         <ul

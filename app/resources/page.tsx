@@ -259,7 +259,6 @@ export default function ResourcesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Resources"
         title={
           <>
             Resources for FTC teams,

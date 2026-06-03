@@ -19,7 +19,6 @@ export default function AndroidStudioPage() {
   return (
     <>
       <PageHero
-        eyebrow="Guide · Android Studio Setup"
         title={
           <>
             Set up Android Studio
@@ -274,7 +273,6 @@ function Steps() {
     <section id="steps" className="px-6 py-24 lg:py-32 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="The walkthrough"
           title={
             <>
               Set Up
@@ -761,7 +759,6 @@ function WirelessADB() {
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Recommended · Wireless"
           title={
             <>
               Connect over Wi-Fi

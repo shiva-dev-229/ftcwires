@@ -71,7 +71,6 @@ export default function PlanningPage() {
   return (
     <>
       <PageHero
-        eyebrow="Planning"
         title={
           <>
             Run a season

@@ -18,7 +18,6 @@ export default function GitPage() {
   return (
     <>
       <PageHero
-        eyebrow="Guide · Git Setup"
         title={
           <>
             Set up Git
@@ -128,7 +127,6 @@ function WhyGit() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Why bother"
           title={
             <>
               Why Git? 
@@ -323,7 +321,6 @@ function Steps() {
     <section id="steps" className="px-6 py-24 lg:py-32 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="The walkthrough"
           title={
             <>
               Five steps,
@@ -466,7 +463,6 @@ function Troubleshooting() {
     <section id="troubleshooting" className="px-6 py-24 lg:py-32 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Troubleshooting"
           title={
             <>
               Questions?

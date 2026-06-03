@@ -19,7 +19,6 @@ export default function CommandBasedPage() {
   return (
     <>
       <PageHero
-        eyebrow="Architecture · Guidance"
         title={
           <>
             Command-based architecture
@@ -103,7 +102,6 @@ function WhatItIs() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <SectionEyebrow>What it is</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               A way to organize
               <span className="block text-fade">behavior on a robot.</span>
@@ -225,7 +223,6 @@ function WhyTeams() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Why"
           title={
             <>
               Why teams use
@@ -302,7 +299,6 @@ function Concepts() {
     <section id="concepts" className="px-6 py-24 lg:py-32 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Core concepts"
           title={
             <>
               The building blocks 
@@ -378,7 +374,6 @@ const tree = `TeamCode/src/main/java/org/firstinspires/ftc/teamcode/
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <SectionEyebrow>Recommended layout</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               A repo structure
               <span className="block text-fade">that you decide.</span>
@@ -439,7 +434,6 @@ function Skeletons() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Illustrative skeletons"
           title={
             <>
               What a subsystem
@@ -626,7 +620,6 @@ function References() {
     <section id="references" className="px-6 py-24 lg:py-32 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Community libraries & references"
           title={
             <>
               <span className="block text-fade">Check out some of the common libraries</span>
@@ -691,7 +684,6 @@ function ContributeCTA() {
             className="bg-grid pointer-events-none absolute inset-0 opacity-50"
           />
           <div className="relative">
-            <SectionEyebrow>Video</SectionEyebrow>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               What Ivy is and How to Structure it  
               <span className="block text-fade">- a Pedro Pathing video by Davis Luxenburg.</span>

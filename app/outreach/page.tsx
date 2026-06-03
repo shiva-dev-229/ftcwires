@@ -252,7 +252,6 @@ export default function OutreachPage() {
   return (
     <>
       <PageHero
-        eyebrow="Outreach · Team Spotlights"
         title={
           <>
             Outreach by
@@ -289,7 +288,6 @@ function AwardLegend() {
     <section id="award-legend" className="px-6 pb-16 lg:pb-24 scroll-mt-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Award legend"
           title={
             <>
               FTC judged awards

@@ -94,7 +94,6 @@ function Vision() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="The Vision"
           title={
             <>
               <span className="block text-fade">Connecting teams that need parts with teams that have the parts.</span>
@@ -177,7 +176,6 @@ function Roadmap() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          eyebrow="Roadmap"
           title={
             <>
               From concept
@@ -249,7 +247,6 @@ function Principles() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <SectionEyebrow>Principles</SectionEyebrow>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               How we&rsquo;ll
               <span className="block text-fade">build it.</span>
@@ -289,7 +286,6 @@ function FinalCTA() {
     <section className="px-6 py-24 lg:py-32">
       <div className="mx-auto max-w-4xl text-center">
         <SectionHeader
-          eyebrow="Early access"
           title={
             <>
               Want to help

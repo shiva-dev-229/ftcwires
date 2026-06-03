@@ -26,7 +26,6 @@ export default function RegisterPage() {
       <div className="animate-in mx-auto max-w-lg">
         {/* Header */}
         <div className="mb-10 text-center">
-          <SectionEyebrow center>Register</SectionEyebrow>
           <h1 className="mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
             Get access to
             <span className="block text-fade">the software platform instructions.</span>

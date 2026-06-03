@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <PageHero
-        eyebrow="A Wisconsin FTC community project"
         title={
           <>
            Wisconsin Rises to Enable STEM Growth (WI.R.E.S.)

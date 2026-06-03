@@ -50,7 +50,7 @@ export function PageHero({
   showStatus,
   statusLabel,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: React.ReactNode;
   desc: React.ReactNode;
   cta?: React.ReactNode;
@@ -87,9 +87,9 @@ export function PageHero({
             />
             {statusLabel ?? eyebrow}
           </span>
-        ) : (
+        ) : eyebrow ? (
           <SectionEyebrow center>{eyebrow}</SectionEyebrow>
-        )}
+        ) : null}
         <h1 className="mt-6 text-5xl font-semibold leading-[1.04] tracking-tight sm:text-6xl lg:text-7xl">
           {title}
         </h1>
