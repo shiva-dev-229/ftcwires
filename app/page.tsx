@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  PageHero,
   PrimaryButton,
   GhostButton,
   ArrowRight,
@@ -11,42 +10,69 @@ import {
 export default function Home() {
   return (
     <>
-      <PageHero
-        title={
-          <>
-           Wisconsin Rises to Enable STEM Growth (WI.R.E.S.)
-          </>
-        }
-        desc={
-          <>
-            FTC W.I.R.E.S. is a community resource hub led by{" "}
-            <span className="text-foreground">Team 13201 Hazmat</span>, with
-            contributions from teams, mentors, and alumni across Wisconsin.
-            We have created some guides, examples, and templates
-            for common FTC tools so a newer team can grow
-            faster and even an exisiting team can learn!.
-          </>
-        }
-        cta={
-          <>
-            <PrimaryButton href="/resources" className="w-full sm:w-auto">
-              Browse resources
-              <ArrowRight className="h-4 w-4" />
-            </PrimaryButton>
-            <GhostButton
-              href="s-lending-ne/parttwork"
-              className="w-full sm:w-auto"
-            >
-              See what we&rsquo;re building
-            </GhostButton>
-          </>
-        }
-      />
+      <Hero />
 
       <Stats />
       <Mission />
       <HomeCTA />
     </>
+  );
+}
+
+/* =====================================================
+ * Hero — logo-first layout
+ * ===================================================== */
+function Hero() {
+  return (
+    <section className="relative isolate overflow-hidden px-6 pb-24 pt-24 sm:pt-28 lg:pb-32 lg:pt-32">
+      {/* Background */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="bg-grid absolute inset-0" />
+        <div className="bg-spotlight absolute inset-0" />
+        <div
+          className="absolute inset-x-0 bottom-0 h-40"
+          style={{ background: "linear-gradient(to top, var(--background), transparent)" }}
+        />
+      </div>
+
+      <div className="animate-in mx-auto max-w-4xl text-center">
+        {/* Logo */}
+        <div className="flex justify-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/WIRESbg.png"
+            alt="FTC W.I.R.E.S."
+            className="h-64 w-64 sm:h-80 sm:w-80 lg:h-[28rem] lg:w-[28rem] object-contain drop-shadow-[0_0_40px_rgba(255,255,255,0.08)]"
+          />
+        </div>
+
+        {/* Title */}
+        <h1 className="mt-4 tracking-tight">
+          <span className="block text-5xl font-semibold sm:text-6xl lg:text-7xl">FTC W.I.R.E.S.</span>
+          <span className="block mt-2 text-xl font-medium text-fade sm:text-2xl">Wisconsin Initiative Rising to Enable STEM.</span>
+        </h1>
+
+        {/* Description */}
+        <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          A community resource hub led by{" "}
+          <span className="text-foreground">Team 13201 Hazmat</span>, with
+          contributions from teams, mentors, and alumni across Wisconsin.
+          Guides, examples, and templates for common FTC tools — so every team
+          can grow faster.
+        </p>
+
+        {/* CTAs */}
+        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <PrimaryButton href="/resources" className="w-full sm:w-auto">
+            Browse resources
+            <ArrowRight className="h-4 w-4" />
+          </PrimaryButton>
+          <GhostButton href="/parts-lending-network" className="w-full sm:w-auto">
+            See what we&rsquo;re building
+          </GhostButton>
+        </div>
+      </div>
+    </section>
   );
 }
 

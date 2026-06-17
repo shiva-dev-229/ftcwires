@@ -114,22 +114,18 @@ function FAQ() {
   const items = [
     {
       q: "Do we have to be a Wisconsin team to use FTC Wires?",
-      a: "Most of our resources and the Parts Lending Network start with Wisconsin teams, but our software and written playbooks are useful for any FTC team. Get in touch and we'll point you to the right pieces.",
-    },
-    {
-      q: "Is everything free?",
-      a: "Yes. FTC Wires is a community initiative built by 13201 Team Hamzat + Wisconsin alumni and mentors. The software platform, resources, and the upcoming Parts Lending Network are free for participating teams.",
+      a: "Some resources and the Parts Lending Network are Wisconsin only, but our software guides and other resources are useful for any FTC team.",
     },
     {
       q: "How can our team contribute?",
-      a: "Submit a guide, list hardware for the lending poolor share an outreach playbook. Email us, everything is helpful!",
+      a: "Submit a guide, list hardware for the lending pool, share any resources! Email us, everything is helpful!",
     },
   ];
   return (
     <section className="px-6 pb-32">
       <div className="mx-auto max-w-3xl">
         <SectionHeader
-          title={<>Common questions.</>}
+          title={<>Some questions.</>}
         />
         <ul
           className="mt-12 overflow-hidden rounded-3xl border"

@@ -47,7 +47,6 @@ export default function CommandBasedPage() {
         }
       />
 
-      <Disclosure />
       <WhatItIs />
       <WhyTeams />
       <Concepts />
@@ -56,40 +55,6 @@ export default function CommandBasedPage() {
       <References />
       <ContributeCTA />
     </>
-  );
-}
-
-/* =====================================================
- * Transparent disclosure
- * ===================================================== */
-function Disclosure() {
-  return (
-    <section className="px-6 pb-16 lg:pb-24">
-      <div className="mx-auto max-w-4xl">
-        <div
-          className="flex items-start gap-4 rounded-2xl border p-5 sm:p-6"
-          style={{
-            borderColor: "var(--border)",
-            background:
-              "color-mix(in oklab, var(--foreground) 2.5%, transparent)",
-          }}
-        >
-          <span
-            className="mt-0.5 inline-block h-1.5 w-1.5 flex-none rounded-full"
-            style={{ background: "var(--foreground)" }}
-          />
-          <p className="text-[13.5px] leading-relaxed text-muted">
-            <span className="text-foreground">Important framing.</span>{" "}
-            Command-based programming was popularized by{" "}
-            <span className="text-foreground">WPILib</span> in FRC and has
-            been adapted to FTC by community libraries like{" "}
-            <span className="text-foreground">NextFTC</span> and{" "}
-            <span className="text-foreground">Ivy</span> etc. FTC Wires
-            helps educate teams on the pattern and how to use it so your team can adopt it confidently.
-          </p>
-        </div>
-      </div>
-    </section>
   );
 }
 

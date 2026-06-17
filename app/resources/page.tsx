@@ -27,7 +27,7 @@ const CATEGORIES: ResourceCategory[] = [
     tag: "Links",
     title: "Important Sites",
     blurb:
-      "Some links every FTC team should know about.",
+      "Some important websites for FTC teams.",
     links: [
       {
         label: "FIRST Tech Challenge",
@@ -52,7 +52,7 @@ const CATEGORIES: ResourceCategory[] = [
     tag: "Directory",
     title: "Team Info",
     blurb:
-      "Team contact info, statewide directories, and the official FTC team search.",
+      "Team contact info, wisconsin statewide directories, and the official FTC team search.",
     links: [
       {
         label: "WI Team Information Sheet",
@@ -69,9 +69,9 @@ const CATEGORIES: ResourceCategory[] = [
   {
     id: "collaborate",
     tag: "Shared",
-    title: "Collaborate",
+    title: "FTC Community",
     blurb:
-      "Open documents, scouting boards, and channels for live inter-team coordination.",
+      "Social places, to get help, help others, and socialize.",
     links: [
      
       {
@@ -97,18 +97,19 @@ const CATEGORIES: ResourceCategory[] = [
     tag: "Start here",
     title: "General Resources",
     blurb:
-      "Rookie onboarding, safety basics, season structure, and parent-friendly guides.",
+      "Good general resources for FTC teams.",
     links: [
-      {
-        label: "Game Manual 0 (GM0)",
-        desc: "One of the best community-made guides for learning FTC hardware, software, and strategy.",
-        href: "https://gm0.org/en/latest/",
-      },
       {
         label: "Official FIRST Resources",
         desc: "Official season information, rules, updates, and FTC documentation from FIRST.",
         href: "https://www.firstinspires.org/resource-library/ftc/game-and-season-info",
       },
+      {
+        label: "Game Manual 0 (GM0)",
+        desc: "One of the best community-made guides for learning FTC hardware, software, and strategy.",
+        href: "https://gm0.org/en/latest/",
+      },
+      
       {
         label: "FTC SIM",
         desc: "A browser-based FTC simulator for practicing programming and robot control concepts.",
@@ -118,6 +119,11 @@ const CATEGORIES: ResourceCategory[] = [
         label: "OnShape",
         desc: "Cloud-based CAD software widely used by FTC teams for robot design and collaboration.",
         href: "https://www.onshape.com",
+      },
+      {
+        label: "Fusion Education Licesnse",
+        desc: "Fusion 360 is Autodesk software for CAD, with free licenses for students.",
+        href: "https://www.autodesk.com/education/edu-software/fusion",
       },
     ],
   },
@@ -140,7 +146,7 @@ const CATEGORIES: ResourceCategory[] = [
     },
     {
       label: "Axon Robotics",
-      desc: "FTC-focused servos",
+      desc: "High performance servos and motion components designed for FTC.",
       href: "https://axon-robotics.com/",
     },
     {
@@ -154,18 +160,23 @@ const CATEGORIES: ResourceCategory[] = [
       href: "https://www.studica.com/",
     },
     {
+      label: "Ferra Components",
+      desc: "An electrical specfici store that sells many custom components, mostly electrical",
+      href: "https://www.ferracomponents.com/",
+    },
+    {
       label: "McMaster-Carr",
       desc: "Industrial hardware supplier commonly used by FTC teams for fasteners, materials, bearings, and mechanical components.",
       href: "https://www.mcmaster.com/",
     },
     {
       label: "CNC Madness",
-      desc: "Custom FTC machining, odometry pods, drivetrain components, and precision robotics parts.",
+      desc: "Custom FTC machining.",
       href: "https://cncmadness.com/",
     },
     {
       label: "Fabworks",
-      desc: "Custom manufacturing and fabrication services for robotics teams and engineering projects.",
+      desc: "Custom FTC machining.",
       href: "https://www.fabworks.com/",
     },
     {
@@ -243,7 +254,7 @@ const CATEGORIES: ResourceCategory[] = [
     },
     {
       label: "Scouting Guide",
-      desc: "Practical FTC scouting strategies, workflows, and competitive analysis guidance.",
+      desc: "Practical FTC scouting strategies and analysis guidance.",
       href: "https://docs.google.com/document/d/1lVtBp20XT_ZGtRpURoLbqTFpbBjoPcP--gMr0LWLjcY/edit?usp=sharing",
     },
     {
@@ -297,13 +308,7 @@ function Categories() {
           >
             <div className="grid grid-cols-1 gap-10 p-8 sm:p-10 lg:grid-cols-12 lg:gap-12">
               <div className="lg:col-span-4">
-                <span
-                  className="rounded-full border px-2.5 py-1 text-[11px] font-medium uppercase tracking-widest text-muted"
-                  style={{ borderColor: "var(--border)" }}
-                >
-                  {c.tag}
-                </span>
-                <h2 className="mt-5 text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                   {c.title}
                 </h2>
                 <p className="mt-3 text-[14.5px] leading-relaxed text-muted">
