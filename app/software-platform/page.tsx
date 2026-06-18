@@ -63,7 +63,7 @@ const AUTO_PATHING_TOOLS: Tool[] = [
   {
     name: "Blocks",
     blurb:
-      "FTC's drag-and-drop programming interface. We share sample block autonomous routines that rookie teams can adapt for their own bots — no Java required.",
+    "FTC's drag-and-drop programming tool. We have sample Blocks autos that rookie teams can learn, tweak, and use on their own bots with a step by step guide on how to learn, this doesn't require java knowledge.",
     href: "/blocks",
     status: "available",
     upstream: "Official FTC Blocks",
@@ -71,7 +71,7 @@ const AUTO_PATHING_TOOLS: Tool[] = [
   {
     name: "Roadrunner",
     blurb:
-      "A motion-planning library built for FTC. Enables complex path generation and following with precise control over velocity and acceleration — for more accurate autonomous routines.",
+    "A FTC motion planning library for making autos with smooth paths, splines, turns, and velocity control. Best for tank drive teams that want more accurate autonomous movement.",
     href: "/roadrunner",
     status: "available",
     upstream: "acmerobotics/road-runner",
@@ -79,8 +79,8 @@ const AUTO_PATHING_TOOLS: Tool[] = [
   {
     name: "Pedro Pathing",
     blurb:
-      "A custom path-following library for FTC. Uses Bézier curves to keep autos fast and consistent while correcting for external disturbances along the way.",
-    href: "/pedro-pathing",
+  "FTC pathing library for fast, smooth Bézier curve autos that stay consistent even with small bumps or drift. Best for most drive trains",
+      href: "/pedro-pathing",
     status: "available",
     upstream: "Pedro-Pathing/PedroPathing",
   },
