@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FTC Wires — A modern platform for FTC robotics teams",
+  title: "FTC WI.R.E.S.",
   description:
-    "FTC W.I.R.E.S. — Wisconsin Rises to Enable STEM Growth. Software, parts lending, resources, planning, and outreach for FTC teams.",
+    "FTC WI.R.E.S. — Wisconsin Rises to Enable STEM Growth. Guides, examples, and resources for FIRST Tech Challenge teams.",
   icons: {
     icon: "/WIRESbg.png",
     apple: "/WIRESbg.png",

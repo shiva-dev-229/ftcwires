@@ -277,7 +277,7 @@ function OfficialResources() {
               <span className="block text-fade">the official docs.</span>
             </>
           }
-          desc="FTC W.I.R.E.S. has created easy guides and example block autos. Though if you want to learn more, check out the official docs."
+          desc="FTC WI.R.E.S. has created easy guides and example block autos. Though if you want to learn more, check out the official docs."
         />
 
         <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2">

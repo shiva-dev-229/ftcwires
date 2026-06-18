@@ -40,14 +40,14 @@ function Hero() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/WIRESbg.png"
-            alt="FTC W.I.R.E.S."
+            alt="FTC WI.R.E.S."
             className="h-64 w-64 sm:h-80 sm:w-80 lg:h-[28rem] lg:w-[28rem] object-contain drop-shadow-[0_0_40px_rgba(255,255,255,0.08)]"
           />
         </div>
 
         {/* Title */}
         <h1 className="mt-4 tracking-tight">
-          <span className="block text-5xl font-semibold sm:text-6xl lg:text-7xl">FTC W.I.R.E.S.</span>
+          <span className="block text-5xl font-semibold sm:text-6xl lg:text-7xl">FTC WI.R.E.S.</span>
           <span className="block mt-2 text-xl font-medium text-fade sm:text-2xl">Wisconsin Rises to Enable STEM Growth.</span>
         </h1>
 

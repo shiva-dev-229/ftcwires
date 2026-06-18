@@ -48,7 +48,7 @@ function Channels() {
     {
       tag: "Email",
       label: "ftcwires@gmail.com",
-      desc: "For questions about FTC W.I.R.E.S. and its resources.",
+      desc: "For questions about FTC WI.R.E.S. and its resources.",
       href: "https://mail.google.com/mail/?view=cm&fs=1&to=ftcwires@gmail.com"
     },
     {

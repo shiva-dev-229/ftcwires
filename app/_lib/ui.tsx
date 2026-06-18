@@ -1,11 +1,4 @@
-/* =====================================================
- * Brand
- *
- * Logo source: /public/wires-logo.svg (placeholder ships out of the box).
- * To use the real W.I.R.E.S. logo:
- *   1. Save your background-removed PNG to /public/wires-logo.png
- *   2. Change the src below from "/wires-logo.svg" to "/wires-logo.png"
- * ===================================================== */
+
 export function WiresLogo({
   size = 28,
   showWordmark = true,
@@ -24,7 +17,7 @@ export function WiresLogo({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/WIRESbg.png"
-          alt="FTC W.I.R.E.S."
+          alt="FTC WI.R.E.S."
           width={size}
           height={size}
           className="h-full w-full object-contain"
@@ -32,7 +25,7 @@ export function WiresLogo({
       </span>
       {showWordmark && (
         <span className="text-sm font-semibold tracking-tight text-foreground">
-          FTC W.I.R.E.S.
+          FTC WI.R.E.S.
         </span>
       )}
     </span>
