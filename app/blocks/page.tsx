@@ -81,7 +81,7 @@ function VideoSection() {
         >
           <div className="relative aspect-video w-full">
             <video
-              src="/blocks.mov"
+              src="/blocks.mp4"
               autoPlay
               loop
               muted

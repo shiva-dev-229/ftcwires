@@ -207,7 +207,7 @@ function VideoSection() {
         >
           <div className="relative aspect-video w-full">
             <video
-              src="/roadrunner.mov"
+              src="/java.mp4"
               autoPlay
               loop
               muted
