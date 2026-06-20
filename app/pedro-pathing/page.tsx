@@ -83,7 +83,7 @@ function VideoSection() {
         >
           <div className="relative aspect-video w-full">
             <video
-              src="/java.mpr"
+              src="/java.mp4"
               autoPlay
               loop
               muted
