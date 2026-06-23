@@ -113,12 +113,16 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [paletteOpen, setPaletteOpen] = useState(false);
-  const [theme, setTheme] = useState<"light" | "dark">(() => {
-    if (typeof window === "undefined") return "dark";
-    return localStorage.getItem("ftcw-theme") === "light" ? "light" : "dark";
-  });
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const rootRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+
+  useEffect(() => {
+    /* eslint-disable react-hooks/set-state-in-effect */
+    const t = localStorage.getItem("ftcw-theme");
+    setTheme(t === "light" ? "light" : "dark");
+    /* eslint-enable react-hooks/set-state-in-effect */
+  }, []);
 
   useEffect(() => {
     /* eslint-disable react-hooks/set-state-in-effect */
