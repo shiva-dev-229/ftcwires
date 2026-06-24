@@ -74,6 +74,8 @@ function Channels() {
             <a
               key={it.label}
               href={it.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative flex items-start gap-6 overflow-hidden rounded-3xl border p-8 transition-all duration-300 hover:-translate-y-1"
               style={{
                 borderColor: "var(--border)",
