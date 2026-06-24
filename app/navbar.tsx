@@ -105,6 +105,8 @@ const NAV: NavItem[] = [
       },
     ],
   },
+  { label: "Outreach", href: "/outreach" },
+  { label: "PartsPool", href: "/partspool" },
   { label: "Contact", href: "/contact" },
 ];
 

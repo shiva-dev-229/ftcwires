@@ -119,6 +119,6 @@ export const ROUTE_META: Record<string, RouteMeta> = {
   },
 };
 
-export const SEARCH_EXCLUDE: string[] = [];
+export const SEARCH_EXCLUDE: string[] = ["/partspool"];
 
 export const MANUAL_ENTRIES: SearchEntry[] = [];
